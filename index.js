@@ -22,6 +22,10 @@ if (cluster.isMaster) {
     res.send('Hi there!');
   });
 
+  app.get('/dash', (req, res) => {
+    res.send('This was dash fast!!');
+  });
+
   app.listen(1500, () => {
     console.log('App has started on port 1500');
   });
